@@ -5,7 +5,7 @@
 ### Installation
 
 ```sh
-$ sudo docker pull eperoumal/selenium
+$ sudo docker pull eperoumalnaik/selenium
 ```
 
 ### Usage
@@ -13,7 +13,7 @@ $ sudo docker pull eperoumal/selenium
 Run the container:
 
 ```sh
-$ SELENIUM_CONTAINER=$(sudo docker run -p 4444:4444 -d eperoumal/selenium)
+$ SELENIUM_CONTAINER=$(sudo docker run -p 4444:4444 -d eperoumalnaik/selenium)
 ```
 
 Selenium server will be available on the host machine at port 4444. Web tests 
