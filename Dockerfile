@@ -1,15 +1,15 @@
-FROM base
+FROM ubuntu:14.04 
 
 MAINTAINER Emmanuel Peroumalnaik "eperoumalnaik@weborama.com"
 
 # add security package sources so that we have the latest version of libnss ( required from google-chrome )
 
-RUN echo deb http://security.ubuntu.com/ubuntu quantal-security main restricted >> /etc/apt/sources.list
-RUN echo deb-src http://security.ubuntu.com/ubuntu quantal-security main restricted >> /etc/apt/sources.list
-RUN echo deb http://security.ubuntu.com/ubuntu quantal-security universe >> /etc/apt/sources.list
-RUN echo deb-src http://security.ubuntu.com/ubuntu quantal-security universe >> /etc/apt/sources.list
-RUN echo deb http://security.ubuntu.com/ubuntu quantal-security multiverse >> /etc/apt/sources.list
-RUN echo deb-src http://security.ubuntu.com/ubuntu quantal-security multiverse >> /etc/apt/sources.list
+RUN echo deb http://security.ubuntu.com/ubuntu trusty-security main restricted >> /etc/apt/sources.list
+RUN echo deb-src http://security.ubuntu.com/ubuntu trusty-security main restricted >> /etc/apt/sources.list
+RUN echo deb http://security.ubuntu.com/ubuntu trusty-security universe >> /etc/apt/sources.list
+RUN echo deb-src http://security.ubuntu.com/ubuntu trusty-security universe >> /etc/apt/sources.list
+RUN echo deb http://security.ubuntu.com/ubuntu trusty-security multiverse >> /etc/apt/sources.list
+RUN echo deb-src http://security.ubuntu.com/ubuntu trusty-security multiverse >> /etc/apt/sources.list
 
 RUN apt-get update
 RUN apt-get install -y -q wget unzip dpkg libnss3-1d
