@@ -5,7 +5,7 @@
 ### Installation
 
 ```sh
-$ sudo docker pull eperoumalnaik/selenium
+$ sudo docker pull eperoumalnaik/docker-chrome-selenium
 ```
 
 ### Usage
@@ -13,7 +13,7 @@ $ sudo docker pull eperoumalnaik/selenium
 Run the container:
 
 ```sh
-$ SELENIUM_CONTAINER=$(sudo docker run --privileged -p 4444:4444 -d eperoumalnaik/selenium)
+$ SELENIUM_CONTAINER=$(sudo docker run --privileged -p 4444:4444 -d eperoumalnaik/docker-chrome-selenium)
 ```
 
 Selenium server will be available on the host machine at port 4444. Web tests 
